@@ -1,0 +1,24 @@
+# Compiled binaries
+*.exe
+*.out
+*.o
+*.obj
+
+# Build output
+/bin/
+/build/
+
+# VS Code (keep tasks.json, ignore personal settings)
+.vscode/*
+!.vscode/tasks.json
+
+# MinGW / debug artifacts
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
