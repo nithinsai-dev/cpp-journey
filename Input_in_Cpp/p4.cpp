@@ -10,5 +10,7 @@ int main(){
     std::cout << "Whats your age ? ";
     std::cin >> age;
 
+
+    std::cout << "Hi ur name is " << name << " and ur age is " << age;
     return 0;
 }
