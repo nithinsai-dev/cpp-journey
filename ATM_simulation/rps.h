@@ -6,7 +6,7 @@
 #define C_P18_H
 
 
-class p18 {
+class rps {
 };
 
 
