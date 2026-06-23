@@ -18,10 +18,12 @@ struct rectangle {
 
 int main() {
 
-    struct rectangle r1 = {15,10};
+    struct rectangle r1 = {15,10,'r'};
+    r1.length = 25;
+    r1.breadth = 15;
 
     printf("%d\n" , sizeof(rectangle));
-    cout << "Hello World !" << endl;
+    cout << r1.length << endl;
 
     return 0;
 }
