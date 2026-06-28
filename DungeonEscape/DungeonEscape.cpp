@@ -29,7 +29,7 @@ void monsterRoom()
     int damage = rand() % 16 + 10;
     int reward = rand() % 21 + 10;
 
-    cout << "\n👹 A Monster Appears!\n";
+    cout << "\n A Monster Appears!\n";
     cout << "You fight bravely...\n";
 
     health -= damage;
@@ -44,7 +44,7 @@ void treasureRoom()
 {
     int reward = rand() % 41 + 20;
 
-    cout << "\n💰 Treasure Chest!\n";
+    cout << "\n Treasure Chest!\n";
     cout << "You found " << reward << " gold.\n";
 
     gold += reward;
@@ -60,7 +60,7 @@ void trapRoom()
 {
     int damage = rand() % 11 + 10;
 
-    cout << "\n🪤 Trap!\n";
+    cout << "\n Trap!\n";
     cout << "You lost " << damage << " HP.\n";
 
     health -= damage;
@@ -70,7 +70,7 @@ void potionRoom()
 {
     int heal = rand() % 16 + 10;
 
-    cout << "\n❤️ Health Potion!\n";
+    cout << "\n Health Potion!\n";
     cout << "+" << heal << " HP.\n";
 
     health += heal;
@@ -81,7 +81,7 @@ void potionRoom()
 
 void emptyRoom()
 {
-    cout << "\n🚪 Empty Room...\n";
+    cout << "\n Empty Room...\n";
     cout << "Nothing happened.\n";
 }
 
@@ -144,17 +144,17 @@ int main()
 
     if (health <= 0)
     {
-        cout << "💀 GAME OVER!\n";
+        cout << " GAME OVER!\n";
         cout << "You died in the dungeon.\n";
     }
     else if (hasKey)
     {
-        cout << "🎉 YOU ESCAPED!\n";
+        cout << " YOU ESCAPED!\n";
         cout << "You reached the exit with the key.\n";
     }
     else
     {
-        cout << "🚪 You reached the exit...\n";
+        cout << " You reached the exit...\n";
         cout << "But you don't have the key!\n";
         cout << "You are trapped forever!\n";
     }
