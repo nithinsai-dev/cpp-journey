@@ -14,8 +14,8 @@ class Arithmetic {
         T b;
     public:
         Arithmetic(T a,T b);
-        int add();
-        int subtract();
+        T add();
+        T subtract();
 };
 
 template <class T>
@@ -25,14 +25,14 @@ Arithmetic<T>::Arithmetic(T a,T b) {
 }
 
 template <class T>
-int Arithmetic<T>::add() {
+T Arithmetic<T>::add() {
     T c;
     c = a+b;
     return c;
 }
 
 template <class T>
-int Arithmetic<T>::subtract() {
+T Arithmetic<T>::subtract() {
     T c;
     c = a-b;
     return c;
