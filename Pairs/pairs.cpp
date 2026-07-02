@@ -17,3 +17,7 @@ void explainPairs() {
     pair<int,int> p3[] = {{1,2},{3,4},{5,6}};
     cout << p3[0].first << " " << p3[0].second << endl;
 }
+
+int main() {
+    explainPairs();
+}
