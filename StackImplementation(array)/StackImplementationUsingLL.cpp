@@ -2,7 +2,7 @@
 // Created by NITHIN SAI on 21-07-2026.
 //
 
-#include "solution.h"
+#include "StackImplementationUsingLL.h"
 #include <iostream>
 
 using namespace std;

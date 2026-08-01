@@ -6,11 +6,8 @@
 #define C_QUEUEIMPLEMENTAIONARRAY_H
 
 
-
 class queueImplementaionArray {
-
 };
-
 
 
 #endif //C_QUEUEIMPLEMENTAIONARRAY_H

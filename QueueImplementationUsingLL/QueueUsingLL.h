@@ -6,11 +6,8 @@
 #define C_QUEUEUSINGLL_H
 
 
-
 class QueueUsingLL {
-
 };
-
 
 
 #endif //C_QUEUEUSINGLL_H

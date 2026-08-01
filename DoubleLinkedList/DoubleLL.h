@@ -6,11 +6,8 @@
 #define C_DOUBLELL_H
 
 
-
 class DoubleLL {
-
 };
-
 
 
 #endif //C_DOUBLELL_H
