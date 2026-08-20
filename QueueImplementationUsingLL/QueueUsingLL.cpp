@@ -28,6 +28,7 @@ public :
 
         if (rear == nullptr) {
             front = rear = newNode;
+            return;
         }
 
         rear->next = newNode;

@@ -8,6 +8,11 @@
 
 using namespace std;
 
+struct Node {
+    int data;
+    Node* next;
+};
+
 void mergeSort(int arr[], int low, int high) {
     if (low >= high) {
         return;
@@ -55,4 +60,43 @@ int main() {
     return 0;
 }
 
+Node* merge(Node*left,Node* right) {
+    Node dummy;
+    Node* tail = &dummy;
 
+    dummy.next=nullptr;
+    while (left!=nullptr&&right!=nullptr) {
+        if (left->data<right->data) {
+            tail->next = left;
+        } else {
+            tail->next = right;
+        }
+        tail = tail-> next;
+    }
+    if (left!=nullptr) {
+        tail->next = left;
+    }else {
+        tail->next = right;
+    }
+    return dummy.next;
+}
+Node* mergeSort(Node* head) {
+    if (head == nullptr || head->next == nullptr) {
+        return head;
+    }
+
+    Node* slow=head;
+    Node* fast=  head;
+    Node* prev = nullptr;
+
+    while (fast != nullptr && fast->next!=nullptr) {
+        prev = slow;
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+    prev->next = nullptr;
+
+    Node* left = mergeSort(head);
+    Node* right = mergeSort(slow);
+    return merge(left,right);
+}
